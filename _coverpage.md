@@ -6,7 +6,7 @@
 
 
 [GitHub](https://github.com/hackpython/timedebris/)
-[Get Started](#PyNoviceArea)
+[Get Started](#timedebris)
 
 
 <!-- 背景色 -->
