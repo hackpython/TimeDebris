@@ -1,0 +1,65 @@
+# 20180711碎片.md
+
+## js2py
+
+js2py库，将js转化为python，非常酷，爬虫又多了一个选择
+
+github : https://github.com/PiotrDabkowski/Js2Py
+
+pip install js2py
+
+目前很多新的库都支持3.6，对3.6以下的不是特别稳
+
+所以使用python3.6来测试一下
+
+随便一个网站找一段js，将其转换为python
+
+```python
+In [1]: import js2py
+
+In [2]: js2py.eval_js('function add(a,b){return a+b}')
+Out[2]: 'function add(a, b) { [python code] }'
+
+In [3]: add = js2py.eval_js('function add(a,b){return a+b}')
+
+In [4]: add(1,2) + 3
+Out[4]: 6
+
+In [5]: add(5,6)
+Out[5]: 11
+```
+
+文档中说很多人使用js2py来翻译比较巨大的js（>50kb），一般不会出现什么问题，但目前js2py只支持JavaScript中原生的255个方法，而JavaScript中原生有300个方法
+
+## pyppeteer
+
+pyppeteer 无头浏览器，支持异步
+
+因为PhantomJS已经停止开发了，所以关注一下pyppeteer
+
+pyppeteer是puppeteer的非官方python版
+
+pyppeteer github https://github.com/miyakogi/pyppeteer
+
+所有功能目前没有测试完毕，需要运行在3.6+
+
+第一次运行pyppeteer时，它会下载最新版本的Chromium（~100MB）
+
+## requests-html
+
+requests作者的新作品
+
+requests-html比较重要的特点就是，支持异步，支持JavaScript
+
+它基于 requests pyppetter
+
+
+
+
+
+
+
+
+
+
+
